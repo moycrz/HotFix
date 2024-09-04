@@ -1,0 +1,632 @@
+/* Reset de márgenes y paddings para asegurar consistencia en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #FFFFFF; /* Color de texto principal */
+    background-color: #1A1A1D; /* Fondo principal */
+}
+
+/* Estilos del header y navegación */
+header {
+    background-color: #ffffff; /* Fondo del header */
+    color: #FFFFFF;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    height: 40px; /* Mantener la altura del header constante */
+}
+
+nav .logo img {
+    height: 100%; /* El logo SVG ocupará toda la altura disponible */
+    width: 100px; /* Mantener la proporción del logo */
+}
+
+nav .nav-links {
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #000000; /* Color de los enlaces del menú */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #FF2E2E; /* Hover en naranja vibrante */
+}
+
+/* Estilos de la sección principal (Hero Section) */
+.hero {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    color: #FFFFFF; /* Color de letra */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero #hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF2E2E; /* Botón en rojo intenso */
+    color: #1A1A1D;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF6F00; /* Hover en naranja vibrante */
+}
+
+/* Estilos de la sección de servicios */
+.services {
+    background-color: #ffffff; /* Fondo alternativo */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #FF2E2E; /* Color del título */
+}
+
+.services .service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .service {
+    background-color: #1A1A1D;
+    border: 1px solid #FF2E2E;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.services .service img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.services .service h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #FF2E2E; /* Color del título de cada servicio */
+}
+
+/* Estilos de la sección de soluciones */
+.solutions {
+    background-color: #242424; /* Fondo alternativo */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.solutions h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #FF2E2E; /* Color del título */
+}
+
+.solutions .solution-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.solutions .solution {
+    background-color: #1A1A1D;
+    border: 1px solid #FF2E2E;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solutions .solution:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.solutions .solution h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #FF2E2E; /* Color del título de cada solución */
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #FF2E2E; /* Botón en rojo intenso */
+    color: #1A1A1D;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #FF6F00; /* Hover en naranja vibrante */
+}
+
+/* Estilos de la sección Sobre Nosotros */
+.about {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: #051d40;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-text ul li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.about-text ul li::before {
+    content: '✔';
+    color: #051d40;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2e66ff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0030b3;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .services .service {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .solutions .solution {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos de la sección de blog */
+.blog {
+    background-color: #242424; /* Fondo alternativo */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #FF2E2E; /* Color del título */
+}
+
+.blog .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog .post {
+    background-color: #1A1A1D;
+    border: 1px solid #FF2E2E;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog .post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog .post h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #FF2E2E; /* Color del título de cada post */
+}
+
+/* Estilos de la sección de contacto */
+.contact {
+    background-color: #1A1A1D; /* Fondo principal */
+    color: #FFFFFF;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.contact-form {
+    padding: 40px;
+    width: 50%;
+    background-color: #242424;
+}
+
+.contact-form h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FF2E2E; /* Título en rojo intenso */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #B3B3B3;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F4F4F4; /* Fondo claro para los inputs */
+    color: #1A1A1D; /* Texto oscuro */
+    font-size: 16px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #A8A8A8; /* Placeholder en gris claro */
+}
+
+.contact-form button.cta-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #FF2E2E; /* Botón en rojo intenso */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-form button.cta-button:hover {
+    background-color: #FF6F00; /* Hover en naranja vibrante */
+}
+
+.contact-form .credit {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #B3B3B3;
+}
+
+.contact-form .credit a {
+    color: #FF2E2E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-form .credit a:hover {
+    color: #FF6F00;
+}
+
+.contact-image {
+    width: 50%;
+    height: auto; /* Se asegura que la altura se ajuste automáticamente */
+    border: none;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+    display: block; /* Elimina posibles espacios de imágenes inline */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #1A1A1D; /* Fondo oscuro */
+    color: #B3B3B3; /* Texto en gris claro */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-footer img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #B3B3B3; /* Enlaces en gris claro */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FF2E2E; /* Hover en rojo intenso */
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media img {
+    height: 20px;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    nav .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .services .service {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .solutions .solution {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-image, .contact-form {
+        width: 100%;
+    }
+}
+
+/* Estilo del botón de menú para pantallas pequeñas */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Esconder el menú en pantallas pequeñas por defecto */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        width: 100%;
+        display: block;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .nav-links a:hover {
+        background-color: #FF2E2E;
+        color: #ffffff;
+    }
+}
+
